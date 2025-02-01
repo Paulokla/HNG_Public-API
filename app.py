@@ -1,7 +1,9 @@
 from flask import Flask, jsonify
+from flask_cors import CORS
 from datetime import datetime
 
 app = Flask(__name__)
+CORS(app)
 
 REGISTERED_EMAIL = "paulokla654@gmail.com"
 GITHUB_URL = "https://github.com/Paulokla/HNG_Public-API.git"
